@@ -685,7 +685,7 @@ def onmessage(update,bot:ObigramClient):
                  client.logout()
              else:
                 bot.editMessageText(message,'#Error #Reasons\n- Host down\n- Wrong credentials')
-        elif 'download' in msgText:
+        elif '/download' in msgText:
             try:
                 url = str(msgText).split()[1]
                 if 'http' in url:
