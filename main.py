@@ -193,7 +193,7 @@ def processFile(update,bot,message,file,thread=None,jdb=None):
             txtname = str(name).split('/')[-1].split('.')[0] + '.txt'
             sendTxt(txtname,files,update,bot)
     else:
-        bot.editMessageText(message,'#Error #ShortURL\nResponse code != 200')
+        bot.editMessageText(message,'#Error')
 
 def ddl(update,bot,message,url,file_name='',thread=None,jdb=None):
     downloader = Downloader()
@@ -442,8 +442,6 @@ def onmessage(update,bot:ObigramClient):
                             continue
                     jdb.save()
                     bot.sendMessage(update.message.chat.id,'Short URL changed')
-                    statInfo = infos.createStat(username, user_info, jdb.is_admin(username))
-                    bot.sendMessage(update.message.chat.id, statInfo)
                 except:
                     bot.sendMessage(update.message.chat.id,'#Error #Command\n/short_url')
             return
