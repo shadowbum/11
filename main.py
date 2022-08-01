@@ -717,7 +717,7 @@ def main():
     bot_token = '5593646046:AAGHy6Z1PXmUWfnayr-r5Re7LqDT8HAF-k0'
     print('init bot.')
     #set in debug
-    bot_token = '5436610373:AAHfDAsYZ4w67_bvP3a1JZKDxDN6Kqi35gU'
+    bot_token = '5593646046:AAGHy6Z1PXmUWfnayr-r5Re7LqDT8HAF-k0'
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
     bot.run()
