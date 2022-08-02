@@ -701,7 +701,7 @@ def onmessage(update,bot:ObigramClient):
                 # set in debug
             #    api_id = 9902519
             #    api_hash = '9d8097d05bbc90a6ed2a7a81abcd4e8a'
-            #    bot_token = '5593646046:AAGHy6Z1PXmUWfnayr-r5Re7LqDT8HAF-k0'
+            #    bot_token = '5585433267:AAEEJnAeLqPtfVum5NOUyN-ZjAKcHFzfe08'
 
             #    chat_id = int(update.message.chat.id)
             #    message_id = int(update.message.message_id)
@@ -714,10 +714,10 @@ def onmessage(update,bot:ObigramClient):
 
 
 def main():
-    bot_token = '5545128659:AAGPtGOUzZVSbbi_Aisn2QZTKN16MesjhgU'
+    bot_token = '5585433267:AAEEJnAeLqPtfVum5NOUyN-ZjAKcHFzfe08'
     print('init bot.')
     #set in debug
-    bot_token = '5545128659:AAGPtGOUzZVSbbi_Aisn2QZTKN16MesjhgU'
+    bot_token = '5585433267:AAEEJnAeLqPtfVum5NOUyN-ZjAKcHFzfe08'
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
     bot.run()
