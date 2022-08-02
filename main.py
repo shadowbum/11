@@ -409,13 +409,13 @@ def onmessage(update,bot:ObigramClient):
                 statInfo = infos.createStat(username,getUser,jdb.is_admin(username))
                 bot.sendMessage(update.message.chat.id,'Configuration loaded')
             return
-        if '/aula_uclv' == msgText:
+        if '/reduc' == msgText:
             getUser = user_info
-            user = ''
-            passw = ''
-            hostmo = 'https://aula.uclv.edu.cu/'
-            zips = 358
-            repoid = 5
+            user = 'alfredo.pernas1'
+            passw = 'Aa.940313'
+            hostmo = 'https://moodlepost.reduc.edu.cu/'
+            zips = 19
+            repoid = 4
             uptype = 'calendar' 
             if getUser:
                 getUser['moodle_user'] = user
