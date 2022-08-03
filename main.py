@@ -243,7 +243,7 @@ def onmessage(update,bot:ObigramClient):
             mensaje = "Access dennied"
             intento_msg = "#Access\nThe user @"+username+ " has tried to access"
             bot.sendMessage(update.message.chat.id,mensaje)
-            bot.sendMessage(958475767,intento_msg)
+            bot.sendMessage(1304796605,intento_msg)
             return
 
 
